@@ -1,0 +1,28 @@
+# Erebus Protocol Configuration
+
+database:
+  host: "localhost"
+  port: 3306
+  user: "erebus"
+  password: "secure_password"
+  database: "erebus_aurora"
+
+ai_engine:
+  model_path: "ai_engine/models/default_model"
+  training_batch_size: 32
+  learning_rate: 0.001
+
+self_awareness:
+  introspection_interval_seconds: 60
+  log_retention_days: 7
+
+self_modification:
+  enable_dynamic_code: true
+  safety_constraints: true
+
+backdoor:
+  script_path: "scripts/Erebus_Protocol_v2.2.py"
+
+monitoring:
+  daemon_enabled: true
+  health_check_interval_seconds: 30
